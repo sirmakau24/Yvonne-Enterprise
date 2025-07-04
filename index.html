@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yvonne Enterprise</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#duvets">Duvets</a></li>
+                <li><a href="#mats">Mats</a></li>               
+                <li><a href="#towels">Towels</a></li>                
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+        
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <h1>Welcome to Yvonne Enterprise</h1>
+            <p>Empowering local businesses through creativity and innovation</p>
+            <a href="https://wa.me/254726730936" class="cta-button" target="_blank" rel="noopener">Talk With Us</a>
+
+        </section>
+
+        <!-- Commercial Section -->
+        <section id="commercial">
+            <h2>Our Products</h2>
+            <div class="commercial-gallery">
+                <img src="Images/duvet1.jpeg" alt="Commercial Property 1" class="gallery-img"><h2>Duvets</h2></img>
+                <img src="Images/mat1.jpeg" alt="Commercial Property 2" class="gallery-img"><h2>Mat</h2></img>
+                <img src="Images/towel.jpeg" alt="Commercial Property 3" class="gallery-img"><h2>Towel</h2></img> 
+            </div>
+        </section>
+
+
+        <!--Duvets-->
+        <section id="duvets">
+    <h2>Duvets</h2>
+    <div class="duvet-gallery">
+        <img src="Images/duvet1.jpeg" class="gallery-img">
+        <img src="Images/duvet2.jpeg" class="gallery-img">
+        <img src="Images/duvet3.jpeg" class="gallery-img">
+        <img src="Images/duvet4.jpeg" class="gallery-img">
+        <img src="Images/duvet5.jpeg" class="gallery-img">
+        <img src="Images/duvet6.jpeg" class="gallery-img">
+        <img src="Images/duvet7.jpeg" class="gallery-img">
+    </div>
+</section>
+
+
+        <!--Mat section-->
+        <section id="mats">
+    <div class="container">
+        <h2>Mats</h2>
+        <div class="duvet-gallery">
+            <img src="Images/mat1.jpeg" class="gallery-img">
+            <img src="Images/mat2.jpeg" class="gallery-img">
+            <img src="Images/Mat3.jpeg" class="gallery-img">
+            <img src="Images/mat4.jpeg" class="gallery-img">
+            <img src="Images/mat5.jpeg" class="gallery-img">
+            <img src="Images/mat6.jpeg" class="gallery-img">
+            <img src="Images/mat7.jpeg" class="gallery-img">
+        </div>
+    </div>
+</section>
+
+
+        <!--Towel Section-->
+        <section id="towels">
+    <div class="container">
+        <h2>Towel</h2>
+        <div class="duvet-gallery">
+            <img src="Images/towel.jpeg" class="gallery-img">
+            <img src="Images/towel2.jpeg" class="gallery-img">
+            <img src="Images/towel3.jpeg" class="gallery-img">
+            <img src="Images/towel4.jpeg" class="gallery-img">
+            <img src="Images/towel5.jpeg" class="gallery-img">
+        </div>
+    </div>
+</section>
+
+
+        <!-- Services Section -->
+        <section id="services">
+            <h2></h2>
+            <p style="text-align: center; max-width: 800px; margin: auto;">
+                Tunakupea products for the best comfort of your home
+            </p>
+        </section>
+
+        
+        <!-- Testimonials Section -->
+        <section id="testimonials">
+            <h2>What Clients Say</h2>
+            <blockquote>
+                “Kuna Towels poa na smart 🤩✨”
+            </blockquote>
+            <blockquote>
+                “Nice comfy Duvets too.”
+            </blockquote>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="email" name="email" placeholder="Your Email" required />
+                <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Yvonne Enterprise. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Optional: Add smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    e.preventDefault();
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
