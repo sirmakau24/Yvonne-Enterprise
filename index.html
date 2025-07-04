@@ -110,15 +110,14 @@
 
         <!-- Contact Section -->
         <section id="contact">
-            <h2>Contact Us</h2>
-            <form class="contact-form">
-                <input type="text" name="name" placeholder="Your Name" required />
-                <input type="email" name="email" placeholder="Your Email" required />
-                <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-    </main>
+    <h2>Contact Us</h2>
+    <form action="send-email.php" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
 
     <!-- Footer -->
     <footer>
