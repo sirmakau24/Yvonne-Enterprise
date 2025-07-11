@@ -1,142 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yvonne Enterprise</title>
-    <link rel="stylesheet" href="styles.css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="vJU5iJ_z7kBmd9TyKwkv4wSisQ-VXolqzMq-ifWtl2c" />
+  <title>Yvonne Enterprise</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
 </head>
-<body>
+<body class="bg-white text-gray-800">
 
-    <!-- Header -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#duvets">Duvets</a></li>
-                <li><a href="#mats">Mats</a></li>               
-                <li><a href="#towels">Towels</a></li>                
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-        
-        <!-- Hero Section -->
-        <section class="hero" id="home">
-            <h1>Welcome to Yvonne Enterprise</h1>
-            <p>Empowering local businesses through creativity and innovation</p>
-            <a href="https://wa.me/254726730936" class="cta-button" target="_blank" rel="noopener">Talk With Us</a>
+<!-- Header -->
+<header class="bg-white shadow-md fixed w-full z-10">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold text-green-700">Yvonne Enterprise</h1>
+    <nav class="space-x-4 hidden md:block">
+      <a href="#home" class="hover:text-green-600">Home</a>
+      <a href="#duvets" class="hover:text-green-600">Duvets</a>
+      <a href="#mats" class="hover:text-green-600">Mats</a>
+      <a href="#towels" class="hover:text-green-600">Towels</a>
+      <a href="#services" class="hover:text-green-600">Services</a>
+      <a href="#contact" class="hover:text-green-600">Contact</a>
+    </nav>
+  </div>
+</header>
 
-        </section>
-
-        <!-- Commercial Section -->
-        <section id="commercial">
-            <h2>Our Products</h2>
-            <div class="commercial-gallery">
-                <img src="Images/duvet1.jpeg" alt="Commercial Property 1" class="gallery-img"><h2>Duvets</h2></img>
-                <img src="Images/mat1.jpeg" alt="Commercial Property 2" class="gallery-img"><h2>Mat</h2></img>
-                <img src="Images/towel.jpeg" alt="Commercial Property 3" class="gallery-img"><h2>Towel</h2></img> 
-            </div>
-        </section>
-
-
-        <!--Duvets-->
-        <section id="duvets">
-    <h2>Duvets</h2>
-    <div class="duvet-gallery">
-        <img src="Images/duvet1.jpeg" class="gallery-img">
-        <img src="Images/duvet2.jpeg" class="gallery-img">
-        <img src="Images/duvet3.jpeg" class="gallery-img">
-        <img src="Images/duvet4.jpeg" class="gallery-img">
-        <img src="Images/duvet5.jpeg" class="gallery-img">
-        <img src="Images/duvet6.jpeg" class="gallery-img">
-        <img src="Images/duvet7.jpeg" class="gallery-img">
-    </div>
+<!-- Hero Section -->
+<section id="home" class="h-screen flex items-center justify-center bg-green-100 text-center pt-20">
+  <div>
+    <h2 class="text-4xl font-bold mb-4">Welcome to Yvonne Enterprise</h2>
+    <p class="text-lg mb-6">Empowering local businesses through creativity and innovation</p>
+    <a href="https://wa.me/254726730936" target="_blank" rel="noopener" class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-full">Talk With Us</a>
+  </div>
 </section>
 
-
-        <!--Mat section-->
-        <section id="mats">
-    <div class="container">
-        <h2>Mats</h2>
-        <div class="duvet-gallery">
-            <img src="Images/mat1.jpeg" class="gallery-img">
-            <img src="Images/mat2.jpeg" class="gallery-img">
-            <img src="Images/Mat3.jpeg" class="gallery-img">
-            <img src="Images/mat4.jpeg" class="gallery-img">
-            <img src="Images/mat5.jpeg" class="gallery-img">
-            <img src="Images/mat6.jpeg" class="gallery-img">
-            <img src="Images/mat7.jpeg" class="gallery-img">
-        </div>
+<!-- Products Overview -->
+<section id="commercial" class="py-12 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-8">Our Products</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white p-4 rounded-lg shadow">
+        <img src="Images/duvet1.jpeg" alt="Duvets" class="rounded mb-2 h-48 w-full object-cover">
+        <h3 class="text-xl font-semibold">Duvets</h3>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow">
+        <img src="Images/mat1.jpeg" alt="Mats" class="rounded mb-2 h-48 w-full object-cover">
+        <h3 class="text-xl font-semibold">Mats</h3>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow">
+        <img src="Images/towel.jpeg" alt="Towels" class="rounded mb-2 h-48 w-full object-cover">
+        <h3 class="text-xl font-semibold">Towels</h3>
+      </div>
     </div>
+  </div>
 </section>
 
-
-        <!--Towel Section-->
-        <section id="towels">
-    <div class="container">
-        <h2>Towel</h2>
-        <div class="duvet-gallery">
-            <img src="Images/towel.jpeg" class="gallery-img">
-            <img src="Images/towel2.jpeg" class="gallery-img">
-            <img src="Images/towel3.jpeg" class="gallery-img">
-            <img src="Images/towel4.jpeg" class="gallery-img">
-            <img src="Images/towel5.jpeg" class="gallery-img">
-        </div>
+<!-- Duvet Gallery -->
+<section id="duvets" class="py-12">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-2xl font-bold mb-6 text-center">Duvets</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <img src="Images/duvet1.jpeg" class="rounded shadow">
+      <img src="Images/duvet2.jpeg" class="rounded shadow">
+      <img src="Images/duvet3.jpeg" class="rounded shadow">
+      <img src="Images/duvet4.jpeg" class="rounded shadow">
+      <img src="Images/duvet5.jpeg" class="rounded shadow">
     </div>
+  </div>
 </section>
 
+<!-- Mats Gallery -->
+<section id="mats" class="py-12 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-2xl font-bold mb-6 text-center">Mats</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <img src="Images/mat1.jpeg" class="rounded shadow">
+      <img src="Images/mat2.jpeg" class="rounded shadow">
+      <img src="Images/Mat3.jpeg" class="rounded shadow">
+      <img src="Images/mat4.jpeg" class="rounded shadow">
+      <img src="Images/mat5.jpeg" class="rounded shadow">
+      <img src="Images/mat6.jpeg" class="rounded shadow">
+    </div>
+  </div>
+</section>
 
-        <!-- Services Section -->
-        <section id="services">
-            <h2></h2>
-            <h2 style="text-align: center; max-width: 800px; margin: auto;">
-                Tunakupea products for the best comfort of your home
-            </h2>
-        </section>
+<!-- Towels Gallery -->
+<section id="towels" class="py-12">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-2xl font-bold mb-6 text-center">Towels</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <img src="Images/towel.jpeg" class="rounded shadow">
+      <img src="Images/towel2.jpeg" class="rounded shadow">
+      <img src="Images/towel3.jpeg" class="rounded shadow">
+      <img src="Images/towel4.jpeg" class="rounded shadow">
+      <img src="Images/towel5.jpeg" class="rounded shadow">
+    </div>
+  </div>
+</section>
 
-        
-        <!-- Testimonials Section -->
-        <section id="testimonials">
-            <h2>What Clients Say</h2>
-            <blockquote>
-                “Kuna Towels poa na smart 🤩✨”
-            </blockquote>
-            <blockquote>
-                “Nice comfy Duvets too.”
-            </blockquote>
-        </section>
+<!-- Services -->
+<section id="services" class="py-12 bg-green-100">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h2 class="text-2xl font-bold mb-4">Our Services</h2>
+    <p class="text-lg">Tunakupea products for the best comfort of your home</p>
+  </div>
+</section>
 
-        <!-- Contact Section -->
-        <section id="contact">
-    <h2>Contact Us</h2>
-    <form action="send-email.php" method="POST" class="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
-        <button type="submit">Send Message</button>
+<!-- Testimonials -->
+<section id="testimonials" class="py-12">
+  <div class="max-w-3xl mx-auto px-4 text-center">
+    <h2 class="text-2xl font-bold mb-6">What Clients Say</h2>
+    <div class="space-y-6">
+      <blockquote class="italic text-gray-700">“Kuna Towels poa na smart 🤩✨”</blockquote>
+      <blockquote class="italic text-gray-700">“Nice comfy Duvets too.”</blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-12 bg-gray-50">
+  <div class="max-w-xl mx-auto px-4">
+    <h2 class="text-2xl font-bold mb-6 text-center">Contact Us</h2>
+    <form action="send-email.php" method="POST" class="space-y-4">
+      <input type="text" name="name" placeholder="Your Name" required class="w-full border px-4 py-2 rounded">
+      <input type="email" name="email" placeholder="Your Email" required class="w-full border px-4 py-2 rounded">
+      <textarea name="message" rows="4" placeholder="Your Message..." required class="w-full border px-4 py-2 rounded"></textarea>
+      <button type="submit" class="w-full bg-green-600 text-white py-2 rounded hover:bg-green-700">Send Message</button>
     </form>
+  </div>
 </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Yvonne Enterprise. All Rights Reserved.</p>
-    </footer>
+<!-- Footer -->
+<footer class="bg-green-700 text-white text-center py-4">
+  <p>&copy; 2025 Yvonne Enterprise. All Rights Reserved.</p>
+</footer>
 
-    <script>
-        // Optional: Add smooth scrolling for navigation links
-        document.querySelectorAll('nav a').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                const targetId = this.getAttribute('href').substring(1);
-                const targetElement = document.getElementById(targetId);
-                if (targetElement) {
-                    e.preventDefault();
-                    targetElement.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
-    </script>
+<script>
+  // Smooth scroll
+  document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        e.preventDefault();
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+</script>
 
 </body>
 </html>

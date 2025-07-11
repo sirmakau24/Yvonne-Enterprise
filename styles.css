@@ -1,240 +1,187 @@
-/* Reset some default styles */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Base Styling */
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: #f8f9fa;
-    color: #222;
-    line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #333;
 }
 
-/* Header & Navigation */
-header {
-    background: #222;
-    color: #fff;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+/* Layout Containers */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 1rem 0;
+/* Header */
+.header {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
 }
 
-nav ul li {
-    margin: 0 1.5rem;
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.2s;
+.logo {
+  font-weight: 600;
+  color: #16a34a;
+  font-size: 1.5rem;
 }
 
-nav ul li a:hover {
-    color: #ff7f50;
+.nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
 }
 
-/* Hero Section */
+.nav a:hover {
+  color: #16a34a;
+}
+
+/* Hero */
 .hero {
-    background: linear-gradient(120deg, #ffecd2 0%, #fcb69f 100%);
-    text-align: center;
-    padding: 100px 20px 60px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  background-color: #dcfce7;
+  text-align: center;
+  padding-top: 4rem;
 }
 
-.hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #222;
+.hero h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    color: #444;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
 }
 
-.cta-button {
-    display: inline-block;
-    background: #ff7f50;
-    color: #fff;
-    padding: 0.8rem 2rem;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background 0.2s;
+.btn-primary {
+  background: #16a34a;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s;
 }
 
-.cta-button:hover {
-    background: #ff5722;
+.btn-primary:hover {
+  background: #15803d;
 }
 
-/* Section Headings */
-section h2 {
-    text-align: center;
-    margin: 2.5rem 0 1.5rem 0;
-    font-size: 2rem;
-    color: #222;
+/* Sections */
+.section {
+  padding: 4rem 1rem;
 }
 
-/* Commercial Gallery*/
-.commercial-gallery {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-    margin-bottom: 1.5rem;
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
 }
 
-.gallery-img {
-    width: 220px;
-    height: 140px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-    border: 2px solid #fff;
-    background: #eee;
+.section-description {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1rem;
 }
 
-/* Duvets Section Styling */
-#Duvets {
-    padding: 40px 20px;
-    background-color: #f9f9f9;
-    text-align: center;
+.bg-light {
+  background-color: #f9fafb;
 }
 
-#Duvets h2 {
-    font-size: 2rem;
-    margin: 40px 0 20px;
-    color: #333;
+.bg-accent {
+  background-color: #ecfdf5;
 }
 
-/* Shared Gallery Grid for Duvets, Mats, Towels */
-.duvet-gallery
-{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto 40px;
+/* Cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
 }
 
-/* Image Styling */
-.duvet-gallery img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    object-fit: cover;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.card {
+  background: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  padding-bottom: 1rem;
 }
 
-.duvet-gallery img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
+.card h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
 
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
 
 /* Testimonials */
-#testimonials {
-    background: #fff8f2;
-    padding: 2rem 1rem;
-    margin: 2rem 0;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+.quote {
+  font-style: italic;
+  text-align: center;
+  max-width: 600px;
+  margin: 1rem auto;
 }
 
-#testimonials blockquote {
-    font-style: italic;
-    color: #444;
-    border-left: 4px solid #ff7f50;
-    margin: 1rem auto;
-    padding: 0.5rem 1rem;
-    max-width: 600px;
-    background: #fff;
-    border-radius: 6px;
-}
-
-/* Contact Form */
+/* Contact */
 .contact-form {
-    max-width: 400px;
-    margin: 2rem auto;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    background: #fff;
-    padding: 1.5rem 2rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .contact-form input,
 .contact-form textarea {
-    padding: 0.7rem;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 1rem;
-    font-family: inherit;
-    resize: vertical;
-}
-
-.contact-form button {
-    background: #ff7f50;
-    color: #fff;
-    border: none;
-    padding: 0.8rem;
-    border-radius: 30px;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.2s;
-}
-
-.contact-form button:hover {
-    background: #ff5722;
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 0.375rem;
+  font-size: 1rem;
 }
 
 /* Footer */
-footer {
-    background: #222;
-    color: #fff;
-    text-align: center;
-    padding: 1.2rem 0;
-    margin-top: 2rem;
-    font-size: 1rem;
-    letter-spacing: 0.5px;
-}
-
-/* Responsive Design */
-@media (max-width: 900px) {
-    .commercial-gallery,
-    .portfolio-gallery {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-@media (max-width: 600px) {
-    nav ul {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-    .hero {
-        padding: 80px 10px 40px 10px;
-    }
-    .commercial-details,
-    .contact-form {
-        padding: 1rem;
-    }
+.footer {
+  background: #14532d;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
 }
