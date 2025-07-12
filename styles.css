@@ -139,18 +139,48 @@ body {
   margin-top: 0.5rem;
 }
 
-/* Gallery */
+
+
+/* 2025  Gallery */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem 0;
+  backdrop-filter: blur(8px);
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.7), rgba(240, 253, 244, 0.6));
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+  animation: fadeInUp 0.8s ease forwards;
 }
 
 .gallery img {
   width: 100%;
-  border-radius: 0.5rem;
+  height: 220px;
   object-fit: cover;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 1rem;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+  filter: saturate(1.05);
+}
+
+.gallery img:hover {
+  transform: scale(1.05) rotateX(1deg);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  filter: saturate(1.2);
+}
+
+/* Smooth entry animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Testimonials */

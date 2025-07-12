@@ -4,10 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="google-site-verification" content="N6wxuGEw6tIsEn0aEFeCK5QlGzwONd5E9_PshG9uSDY" />
-  <meta name="description" content="Yvonne Enterprise provides affordable duvets, mats, and towels in Kenya. We empower local businesses through creativity and innovation." />
+  <meta name="description" content="Yvonne Enterprise(Mama Brayo) provides affordable duvets, mats, and towels in Kenya. We empower local businesses through creativity and innovation." />
   <title>Yvonne Enterprise|Kenya|Machakos|Nairobi</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="Images/mat7.jpeg" style="border-radius: 30%;" >
   <style>
     body {
       font-family: 'Poppins', sans-serif;
@@ -18,7 +19,7 @@
 
 <!-- Header -->
 <header class="bg-white shadow-md fixed w-full z-10">
-  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">   
     <h1 class="text-xl font-bold text-green-700">Yvonne Enterprise</h1>
     <nav class="space-x-4 hidden md:block">
       <a href="#home" class="hover:text-green-600">Home</a>
@@ -142,6 +143,14 @@
 </footer>
 
 <script>
+  // Initialize Vanilla Tilt for product images
+  VanillaTilt.init(document.querySelectorAll(".card"), {
+    max: 8,
+    speed: 400,
+    glare: true,
+    "max-glare": 0.2,
+  });
+
   // Smooth scroll
   document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
