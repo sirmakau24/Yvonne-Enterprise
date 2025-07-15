@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="google-site-verification" content="N6wxuGEw6tIsEn0aEFeCK5QlGzwONd5E9_PshG9uSDY" />
-  <meta name="description" content="Yvonne Enterprise(Mama Brayo) provides affordable duvets, mats, and towels in Kenya. We empower local businesses through creativity and innovation." />
+  <meta name="description" content="Yvonne Enterprise(Mama Brayo) provides affordable duvets, mats, and towels in Kenya. We empower local businesses through creativity and innovation."/>
   <title>Yvonne Enterprise|Kenya|Machakos|Nairobi</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="icon" href="Images/mat7.jpeg" style="border-radius: 30%;" >
+  <link rel="icon" href="Images/mat7.jpeg" style="border-radius: 30%;">
   <style>
     body {
       font-family: 'Poppins', sans-serif;
     }
   </style>
-</head>
-<body class="bg-white text-gray-800">
+  </head>
+  <body class="bg-white text-gray-800">
 
 <!-- Header -->
 <header class="bg-white shadow-md fixed w-full z-10">
@@ -45,7 +46,7 @@
 <section id="commercial" class="py-12 bg-gray-50">
   <div class="max-w-6xl mx-auto px-4 text-center">
     <h2 class="text-3xl font-bold mb-8">Our Products</h2>
-    <div class="grid md:grid-cols-3 gap-6">
+     <div class="grid md:grid-cols-3 gap-6">
       <div class="bg-white p-4 rounded-lg shadow">
         <img src="Images/duvet1.jpeg" alt="Duvets" class="rounded mb-2 h-48 w-full object-cover">
         <h3 class="text-xl font-semibold">Duvets</h3>
@@ -66,12 +67,14 @@
 <section id="duvets" class="py-12">
   <div class="max-w-6xl mx-auto px-4">
     <h2 class="text-2xl font-bold mb-6 text-center">Duvets</h2>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+     <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
       <img src="Images/duvet1.jpeg" class="rounded shadow">
       <img src="Images/duvet2.jpeg" class="rounded shadow">
       <img src="Images/duvet3.jpeg" class="rounded shadow">
       <img src="Images/duvet4.jpeg" class="rounded shadow">
       <img src="Images/duvet5.jpeg" class="rounded shadow">
+      <img src="Images/duvet6.jpeg" class="rounded shadow">
+      </div>
     </div>
   </div>
 </section>
@@ -105,6 +108,7 @@
   </div>
 </section>
 
+
 <!-- Services -->
 <section id="services" class="py-12 bg-green-100">
   <div class="max-w-4xl mx-auto px-4 text-center">
@@ -137,6 +141,29 @@
   </div>
 </section>
 
+  <!-- Our Social Platforms -->
+  <!-- Social Media Section with Container -->
+<section id="social" class="section bg-gray-100 py-12">
+  <div class="container">
+    <h2 class="section-title">Follow Us</h2>
+    <div class="social-icons">
+      <!-- WhatsApp Chat -->
+      <a href="https://wa.me/254726730936" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <!-- WhatsApp Channel -->
+      <a href="https://whatsapp.com/channel/0029VbBS0pPEquiKmroida2m" target="_blank" aria-label="WhatsApp Channel">
+        <i class="fas fa-bullhorn"></i>
+      </a>
+      <!-- TikTok -->
+      <a href="https://www.tiktok.com/yvonne.enterprise" target="_blank" aria-label="TikTok">
+        <i class="fab fa-tiktok"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+
 <!-- Footer -->
 <footer class="bg-green-700 text-white text-center py-4">
   <p>&copy; 2025 Yvonne Enterprise. All Rights Reserved.</p>
@@ -151,6 +178,22 @@
     "max-glare": 0.2,
   });
 
+  //Video play//
+  function setupPlayButton(buttonId, videoId) {
+    const btn = document.getElementById(buttonId);
+    const video = document.getElementById(videoId);
+
+    btn.addEventListener('click', () => {
+      video.muted = false;
+      video.play();
+      btn.style.display = 'none';
+    });
+  }
+
+  setupPlayButton('playDuvet', 'duvetVideo');
+  setupPlayButton('playMats', 'matsVideo');
+  setupPlayButton('playTowel', 'towelVideo');
+
   // Smooth scroll
   document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
@@ -163,6 +206,5 @@
     });
   });
 </script>
-
 </body>
 </html>
