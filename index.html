@@ -21,7 +21,7 @@
 <!-- Header -->
 <header class="bg-white shadow-md fixed w-full z-10">
   <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">   
-    <h1 class="text-xl font-bold text-green-700">Yvonne Enterprise</h1>
+    <h1 class="text-xl font-bold text-green-700">Yvonne Homeware Machakos</h1>
     <nav class="space-x-4 hidden md:block">
       <a href="#home" class="hover:text-green-600">Home</a>
       <a href="#duvets" class="hover:text-green-600">Duvets</a>
@@ -36,7 +36,7 @@
 <!-- Hero Section -->
 <section id="home" class="h-screen flex items-center justify-center bg-green-100 text-center pt-20">
   <div>
-    <h2 class="text-4xl font-bold mb-4">Welcome to Yvonne Enterprise</h2>
+    <h2 class="text-4xl font-bold mb-4">Welcome to Yvonne Homeware Machakos</h2>
     <p class="text-lg mb-6">Empowering local businesses through creativity and innovation</p>
     <a href="https://wa.me/254726730936" target="_blank" rel="noopener" class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-full">Talk With Us</a>
   </div>
@@ -166,33 +166,17 @@
 
 <!-- Footer -->
 <footer class="bg-green-700 text-white text-center py-4">
-  <p>&copy; 2025 Yvonne Enterprise. All Rights Reserved.</p>
+  <p>&copy; 2025 Yvonne Homeware Machakos. All Rights Reserved.</p>
 </footer>
 
-<script>
-  // Initialize Vanilla Tilt for product images
-  VanillaTilt.init(document.querySelectorAll(".card"), {
+  <script>
+    // Initialize Vanilla Tilt for product images
+    VanillaTilt.init(document.querySelectorAll(".card"), {
     max: 8,
     speed: 400,
     glare: true,
     "max-glare": 0.2,
   });
-
-  //Video play//
-  function setupPlayButton(buttonId, videoId) {
-    const btn = document.getElementById(buttonId);
-    const video = document.getElementById(videoId);
-
-    btn.addEventListener('click', () => {
-      video.muted = false;
-      video.play();
-      btn.style.display = 'none';
-    });
-  }
-
-  setupPlayButton('playDuvet', 'duvetVideo');
-  setupPlayButton('playMats', 'matsVideo');
-  setupPlayButton('playTowel', 'towelVideo');
 
   // Smooth scroll
   document.querySelectorAll('nav a').forEach(anchor => {
